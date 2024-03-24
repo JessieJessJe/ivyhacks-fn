@@ -12,7 +12,7 @@ const FlippedCard = ({ responseText }) => { // Receive responseText as a prop
   src="https://cdn.builder.io/api/v1/image/assets/TEMP/24cfee4cfbba04c7c296a1e2b5dac0b2db1e25026492b926cdd4852325c16b30?apiKey=d42d03f8f61140eabd49e1452ecee5be&"
   className="img"
 />
-<div style={{height: '40vh',   display: 'flex', // Enable Flexbox
+<div style={{height: '50vh',   display: 'flex', // Enable Flexbox
   justifyContent: 'center', // Center horizontally
   alignItems: 'center',}}>
           <CardFront responseText={responseText} /> {/* Pass responseText down to CardFront */}
@@ -35,7 +35,7 @@ const FlippedCard = ({ responseText }) => { // Receive responseText as a prop
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/24cfee4cfbba04c7c296a1e2b5dac0b2db1e25026492b926cdd4852325c16b30?apiKey=d42d03f8f61140eabd49e1452ecee5be&"
         className="img"
       />
-      <div style={{height: '40vh',   display: 'flex', // Enable Flexbox
+      <div style={{height: '50vh',   display: 'flex', // Enable Flexbox
   justifyContent: 'center', // Center horizontally
   alignItems: 'center',}}>
           <CardBack />

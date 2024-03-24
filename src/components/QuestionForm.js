@@ -41,10 +41,10 @@ function QuestionForm() {
         width: '50%', // Take up half of the container's width
         height: '100vh' // Make the div full viewport height or adjust as needed
       }}>
-      <form onSubmit={handleSubmit} className="form-container" style={{width: '50%'}}>
-        <label htmlFor="userQuestion">Your Question:</label><br />
-        <input
-        style={{ width: '464px', height: '213px' }}
+      <form onSubmit={handleSubmit} className="form-container" style={{width: '50%',  textAlign: 'left'}}>
+        <label className='input-label' htmlFor="userQuestion">Question for Elon Musk:</label><br />
+        <textarea
+        style={{ width: '464px', height: '213px', marginTop: '18px', font: '18px Inter, sans-serif' }}
           type="text"
           id="userQuestion"
           name="userQuestion"
@@ -53,13 +53,31 @@ function QuestionForm() {
           disabled={isLoading}
         /><br />
         <input
+        className='submit-btn'
           type="submit"
           value={isLoading ? "Waiting for response..." : "Submit"}
           disabled={isLoading}
         />
       </form>
       </div>
-
+      <style jsx>{`
+        .input-label {
+          color: #000;
+          font: 30px GT Sectra Display Trial, -apple-system, Roboto, Helvetica,
+            sans-serif;
+        }
+        .submit-btn {
+          
+          background-color: #000;
+          align-self: start;
+          margin-top: 28px;
+          color: #fff;
+          justify-content: center;
+          padding: 10px 10px;
+          font: 18px Inter, sans-serif;
+        }
+      `}</style>
+     
       <div className='card-container' style={{
       display: 'flex', // Enable Flexbox
       flexDirection: 'column', // Stack the images vertically

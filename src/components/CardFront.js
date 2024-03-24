@@ -31,8 +31,8 @@ function CardFront({ responseText }) { // Receive responseText as a prop
           background-position: center;
           background-size: cover;
           padding: 21px 10px;
-          width: 243px; /* Fixed width */
-          height: 380px; /* Fixed height */
+          width: 343px; /* Fixed width */
+          height: 480px; /* Fixed height */
         }
         .div-2 {
           border-color: rgba(255, 255, 255, 1);
@@ -54,11 +54,7 @@ function CardFront({ responseText }) { // Receive responseText as a prop
           margin: -11px 0 -10px;
           padding: 18px 3px;
         }
-        @media (max-width: 991px) {
-          .div-3 {
-            margin-bottom: 10px;
-          }
-        }
+
         .div-4 {
           justify-content: space-between;
           display: flex;
@@ -70,15 +66,10 @@ function CardFront({ responseText }) { // Receive responseText as a prop
           color: white; /* Added white font color */
         }
         .div-6 {
-          margin-top: 63px;
-          font: 400 12px GT Sectra Display Trial, -apple-system, Roboto, Helvetica, sans-serif;
+          font: 400 16px GT Sectra Display Trial, -apple-system, Roboto, Helvetica, sans-serif;
           color: white; /* Added white font color */
         }
-        @media (max-width: 991px) {
-          .div-6 {
-            margin-top: 40px;
-          }
-        }
+
       `}</style>{' '}
     </>
   );

@@ -8,7 +8,7 @@ function CardBack() {
           <div className='div-3'>
             <div className='div-4'>
               <div className='div-5'></div>
-              <div className='div-6'></div>
+              <div className='div-6-back'></div>
             </div>
           </div>
         </div>
@@ -25,8 +25,8 @@ function CardBack() {
           flex-direction: column;
           justify-content: center;
           padding: 21px 10px;
-          width: 243px; /* Fixed width */
-          height: 380px; /* Fixed height */
+          width: 343px; /* Fixed width */
+          height: 480px; /* Fixed height */
         }
         .div-2 {
           border-color: rgba(255, 255, 255, 1);
@@ -50,11 +50,7 @@ function CardBack() {
           padding: 18px 3px;
           min-height: 150px; /* Example minimum height */
         }
-        @media (max-width: 991px) {
-          .div-3 {
-            margin-bottom: 10px;
-          }
-        }
+
         .div-4 {
           justify-content: space-between;
           display: flex;
@@ -67,17 +63,13 @@ function CardBack() {
           color: white; /* Added white font color */
           min-height: 50px; /* Example minimum height */
         }
-        .div-6 {
+        .div-6-back {
           margin-top: 63px;
           font: 400 12px GT Sectra Display Trial, -apple-system, Roboto, Helvetica, sans-serif;
           color: white; /* Added white font color */
           min-height: 100px; /* Example minimum height */
         }
-        @media (max-width: 991px) {
-          .div-6 {
-            margin-top: 40px;
-          }
-        }
+
       `}</style>{' '}
     </>
   );
