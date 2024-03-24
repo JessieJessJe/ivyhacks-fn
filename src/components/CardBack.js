@@ -1,18 +1,18 @@
-import * as React from 'react';
+import * as React from "react";
 
 function CardBack() {
   return (
     <>
-      <div className='div-back'>
-        <div className='div-2'>
-          <div className='div-3'>
-            <div className='div-4'>
-              <div className='div-5'></div>
-              <div className='div-6-back'></div>
+      <div className="div-back">
+        <div className="div-2">
+          <div className="div-3">
+            <div className="div-4">
+              <div className="div-5"></div>
+              <div className="div-6-back"></div>
             </div>
           </div>
         </div>
-      </div>{' '}
+      </div>{" "}
       <style jsx>{`
         .div-back {
           border-radius: 20px;
@@ -69,8 +69,7 @@ function CardBack() {
           color: white; /* Added white font color */
           min-height: 100px; /* Example minimum height */
         }
-
-      `}</style>{' '}
+      `}</style>{" "}
     </>
   );
 }

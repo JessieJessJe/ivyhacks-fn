@@ -1,20 +1,21 @@
-import * as React from 'react';
+import * as React from "react";
 
-function CardFront({ responseText }) { // Receive responseText as a prop
+function CardFront({ responseText }) {
+  // Receive responseText as a prop
   return (
     <>
-      <div className='div-dark-img'>
-        <div className='div-2'>
-          <div className='div-3'>
-            <div className='div-4'>
+      <div className="div-dark-img">
+        <div className="div-2">
+          <div className="div-3">
+            <div className="div-4">
               {/* <div className='div-5'>Yann LeCun</div> */}
-              <div className='div-6'>
+              <div className="div-6">
                 {responseText} {/* Display the responseText */}
               </div>
             </div>
           </div>
         </div>
-      </div>{' '}
+      </div>{" "}
       <style jsx>{`
         .div-dark-img {
           border-radius: 20px;
@@ -69,8 +70,7 @@ function CardFront({ responseText }) { // Receive responseText as a prop
           font: 400 16px GT Sectra Display Trial, -apple-system, Roboto, Helvetica, sans-serif;
           color: white; /* Added white font color */
         }
-
-      `}</style>{' '}
+      `}</style>{" "}
     </>
   );
 }
