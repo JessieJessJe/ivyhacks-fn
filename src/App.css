@@ -41,9 +41,9 @@
   transform-style: preserve-3d;
 }
 
-/* .card {
-  transform: rotateY(180deg);
-} */
+.card {
+  cursor: pointer;
+}
 
 .card-front,
 .card-back {
@@ -77,6 +77,10 @@
 
 .main-column {
   width: 50%;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  height: 100vh;
 }
 
 @media (max-width: 900px) {

@@ -34,22 +34,25 @@ function QuestionForm() {
 
   return (
     <div className="main-container" style={{ display: "flex" }}>
-      <div
-        className="main-column"
-        style={{
-          display: "flex", // Enable Flexbox
-          justifyContent: "center", // Center horizontally
-          alignItems: "center", // Center vertically
-          height: "100vh", // Make the div full viewport height or adjust as needed
-        }}
-      >
+      <div className="main-column">
         <form onSubmit={handleSubmit} className="form-container" style={{ width: "50%", textAlign: "left" }}>
           <label className="input-label" htmlFor="userQuestion">
-            Question for Elon Musk:
+            Question for <span style={{ fontFamily: "GT Pressura Trial", fontWeight: "700" }}>Elon Musk</span>:
           </label>
           <br />
           <textarea
-            style={{ width: "464px", height: "213px", marginTop: "18px", font: "18px Inter, sans-serif" }}
+            style={{
+              fontFamily: "GT Sectra Display Trial",
+              width: "464px",
+              height: "213px",
+              marginTop: "18px",
+              font: "18px Inter, sans-serif",
+              borderRadius: "20px",
+              borderColor: "rgba(0, 0, 0, 1)",
+              borderStyle: "solid",
+              borderWidth: "1px",
+              backgroundColor: "rgba(249, 247, 247, 0.8)",
+            }}
             type="text"
             id="userQuestion"
             name="userQuestion"
@@ -67,16 +70,7 @@ function QuestionForm() {
         </form>
       </div>
 
-      <div
-        className="card-container main-column"
-        style={{
-          display: "flex", // Enable Flexbox
-          flexDirection: "column", // Stack the images vertically
-          justifyContent: "center", // Center horizontally
-          alignItems: "center", // Center vertically
-          height: "100vh", // Make the div full viewport height or adjust as needed>
-        }}
-      >
+      <div className="card-container main-column">
         <FlippedCard responseText={responseText} />
       </div>
     </div>
